@@ -1,0 +1,114 @@
+
+.marketanalysis-wrapper {
+    padding: 20px;
+   
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .market-tiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .market-tile {
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 150px;
+  }
+  
+  .market-tile:hover {
+    transform: translateY(-5px);
+  }
+  
+  .market-tile img {
+    max-width: 40px;
+  }
+  
+  .tile-text {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .add-tile-form {
+    margin-top: 30px;
+    width: 100%;
+    // max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .add-tile-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-tile-form form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .add-tile-form mat-form-field {
+    width: 100%;
+  }
+  
+  .add-tile-form button {
+    align-self: center;
+  }
+  .add-button{
+    margin: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .add-tile-form form {
+      flex-direction: column; /* Change form layout to column on smaller screens */
+    }
+  
+    .market-tiles-container {
+      gap: 10px; /* Reduce gap between market tiles */
+    }
+  
+    .market-tile {
+      width: 120px; /* Adjust tile width */
+    }
+  
+    .market-tile img {
+      max-width: 30px; /* Adjust image size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .market-tiles-container {
+      gap: 5px; /* Further reduce gap between market tiles */
+    }
+  
+    .market-tile {
+      width: 100px; /* Further adjust tile width */
+    }
+  
+    .market-tile img {
+      max-width: 20px; /* Further adjust image size */
+    }
+  
+    .add-tile-form {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .add-tile-form h2 {
+      font-size: 1.2em; /* Adjust heading size */
+    }
+  }

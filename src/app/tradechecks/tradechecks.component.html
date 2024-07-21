@@ -1,0 +1,61 @@
+<!-- trade-checks.component.html
+<mat-card>
+    <mat-card-title>Trade Checks</mat-card-title>
+    <mat-card-content>
+      <form (ngSubmit)="checkCondition()">
+        <mat-radio-group [(ngModel)]="selectedOption" name="options">
+          <mat-radio-button value="yes">bullish marzubozu candle at a key level</mat-radio-button>
+          <mat-radio-button value="yes">bullish marzubozu candle directly close to the MA</mat-radio-button>
+
+          <mat-radio-button value="yes">one or two hammers at a support or key level</mat-radio-button>
+          <mat-radio-button value="yes">200MA and 20MA very close to each other</mat-radio-button>
+          
+          <mat-radio-button value="yes">Condition Met</mat-radio-button>
+          <mat-radio-button value="yes">Condition Met</mat-radio-button>
+           
+          <mat-radio-button value="no">Condition Not Met</mat-radio-button>
+          <mat-radio-button value="no">one or two hammers not at a support or key level</mat-radio-button>
+          <mat-radio-button value="no">inverted hammer not at a support or key level</mat-radio-button>
+
+
+        </mat-radio-group>
+        <div class="button-area">
+          <button mat-raised-button color="primary" type="submit">Check</button>
+
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+   -->
+  <!-- trade-checks.component.html -->
+<!-- trade-checks.component.html -->
+<!-- trade-checks.component.html -->
+<!-- trade-checks.component.html -->
+
+<!-- trade-checks.component.html -->
+<!-- trade-checks.component.html -->
+<!-- trade-checks.component.html -->
+<!-- trade-checks.component.html -->
+<mat-card>
+  <mat-card-title>Trade Checks</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="tradeCheckForm" (ngSubmit)="checkCondition()">
+      <div formArrayName="options" class="checkbox-container">
+        <div *ngFor="let option of options; let i = index" class="checkbox-item">
+          <mat-checkbox [formControlName]="i">{{ option.label }}</mat-checkbox>
+        </div>
+      </div>
+      <div class="button-area">
+        <button mat-raised-button color="primary" type="submit">Check</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
+
+
+
+
+
+
+
+

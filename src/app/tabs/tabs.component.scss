@@ -1,0 +1,73 @@
+.sidebar {
+    display: block;
+    margin: 20px 0;
+  
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      
+      img {
+        width: 100px; /* Adjust as needed */
+        height: 100px; /* Adjust as needed */
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+      
+      p {
+        margin: 0;
+        font-size: 14px;
+        color: #555;
+      }
+    }
+}
+
+.trade-tabs {
+    display: block;
+    margin: 20px 0;
+    
+  
+    .tabs {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      background: #838a7d;
+      padding: 10px,5px 10px 5px;
+       border-radius: 10px;
+      cursor: pointer;
+    
+      .tab-tile {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        transition: transform 0.3s ease;
+        
+        p {
+          margin-left: 8px;
+          font-size: 16px;
+        }
+        
+        i {
+          font-size: 24px;
+        }
+      }
+  
+      &.active .tab-tile {
+        animation: pump 0.9s ease infinite alternate;
+      }
+    }
+    .tabs:hover{
+      transform: translateY(-0.5px);
+     }
+  }
+  
+  @keyframes pump {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
