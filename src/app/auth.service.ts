@@ -16,7 +16,7 @@ export class AuthService {
   private isAuthenticated = false;
   private verifiedUserId: string | null = null;
 
-  private apiUrl = 'http://localhost:3000/api';
+  private apiUrl = 'https://facotrader-backend.onrender.com/api';
 
   constructor(private router: Router,private http:HttpClient) {}
 
