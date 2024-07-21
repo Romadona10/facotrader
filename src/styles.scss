@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url('https://fonts.googleapis.com/css?family=Material+Icons+Outlined');
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 35px;
+}
+.container{
+    max-width: 850px;
+    // background: rgba(orangered, 0.5);
+    margin: auto;
+}
+.button-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  ::ng-deep .mat-dialog-container {
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box;
+  }
+  

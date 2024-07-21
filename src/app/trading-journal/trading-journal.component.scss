@@ -1,0 +1,69 @@
+/* src/app/trading-journal/trading-journal.component.css */
+.example-full-width{
+
+    margin-left: 10px;
+    border: 1px solid white;
+}
+
+.spinner-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    p{
+      color: #E90074;
+      font-size: 15px;
+    }
+  }
+
+  .table-container {
+    overflow-y: auto;
+    max-height: 400px; /* Adjust height as necessary */
+  }
+  
+  table {
+    width: 100%;
+  }
+
+  .profit {
+    color: green;
+  }
+  
+  .loss {
+    color: red;
+  }
+  
+  
+  mat-card-title{
+    text-align: center;
+  }
+  
+  
+  mat-spinner {
+    display: block;
+    margin: 20px auto;
+  }
+  .mat-icon-button {
+    padding: 0;
+    
+  }
+  
+  .mat-icon-button .mat-icon {
+    font-size: 24px;
+  }
+  
+  .actions-column {
+    width: 50px; /* Adjust as needed */
+  }
+  .edit-button {
+    color: #FF5722; /* Custom color for the icon */
+    background-color: #FFFFFF; /* Optional: Background color for the button */
+    
+    &:hover {
+      background-color: #FFCCBC; /* Optional: Hover background color */
+      transform: translateY(-2px);
+    }
+  }
+  
+  
+  
