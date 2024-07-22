@@ -64,36 +64,4 @@ export class AuthService {
     return this.verifiedUserId !== null;
   }
 
-  // login(email: string, password: string): boolean {
-  //   // This is a dummy login implementation
-  //   // Replace with actual authentication logic
-  //   if (email === 'okeke558@gmail.com' && password === '1234') {
-  //     this.isAuthenticated = true;
-  //     console.log('Login successful, navigating to home-page');
-  //     this.router.navigate(['/market-analysis']);
-  //     return true;
-  //   }
-  //   console.log('one or all the user credientials are wrong');
-  //   return false;
-  // }
-
-  // register(fullName:string,nationality:string,email:string,password:string){
-  //    if(fullName ==='okeke ifeanyichukwu' && nationality ==='Nigeria' && email ==='okeke558@gmail.com' && password === '1234' ){
-  //     this.isAuthenticated =true;
-  //     console.log('registration successful');
-  //     this.router.navigate(['/login']);
-  //     return true
-  //    }
-  //    console.log('unable to register');
-  //    return false
-  // }
-
-  // logout(): void {
-  //   this.isAuthenticated = false;
-  //   this.router.navigate(['/login']);
-  // }
-
-  //  isLoggedIn(): boolean {
-  //    return this.isAuthenticated;
-  //  }
 }
